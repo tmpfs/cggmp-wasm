@@ -18,9 +18,6 @@ pub fn start() {
     log::info!("WASM: module started {:?}", std::thread::current().id());
 }
 
-// Required for rayon thread support
-pub use wasm_bindgen_rayon::init_thread_pool;
-
 mod gg2020;
 mod utils;
 
