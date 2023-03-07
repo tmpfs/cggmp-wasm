@@ -31,6 +31,7 @@ branch = "deps-update"
 #path = "../forks/cggmp-threshold-ecdsa"
 default-features = false
 
+
 [dependencies.curv-kzen]
 #git = "https://github.com/ZenGo-X/curv"
 #path = "../forks/curv"
@@ -50,10 +51,6 @@ git = "https://github.com/tmpfs/multi-party-ecdsa"
 branch = "deps-update"
 default-features = false
 version = "*"
-
-[patch.crates-io]
-#curv-kzen = { path = "../forks/curv" }
-curv-kzen = { git= "https://github.com/tmpfs/curv", branch = "disable-default-features" }
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3"

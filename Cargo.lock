@@ -352,7 +352,8 @@ checksum = "e35f15e1a0699dd988fed910dd78fdc6407f44654cd12589c91fa44ea67d9159"
 [[package]]
 name = "curv-kzen"
 version = "0.10.0"
-source = "git+https://github.com/tmpfs/curv?branch=disable-default-features#3f47aa38cfa2834faf497f4342772df02ed13169"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a616b5f766fd80307f0e83de6326ccd9fe7b3ba4225fe4e12ae3a692a939d07b"
 dependencies = [
  "cryptoxide",
  "curve25519-dalek",
@@ -528,7 +529,7 @@ dependencies = [
 [[package]]
 name = "fs-dkr"
 version = "0.1.0"
-source = "git+https://github.com/tmpfs/fs-dkr?branch=deps-update#1f9ceabaad1dc52503ddca9f7d76b744bfbb6c11"
+source = "git+https://github.com/tmpfs/fs-dkr?branch=deps-update#8cc00728120fab70563268ad83adb2d717c38af7"
 dependencies = [
  "bitvec",
  "curv-kzen",
