@@ -24,14 +24,6 @@ round-based = "0.1.4"
 log = "0.4"
 wasm-log = "0.3"
 
-#[dependencies.centipede]
-#version = "0.3.1"
-#default-features = false
-
-#[dependencies.bulletproof-kzen]
-#version = "1.2.1"
-#default-features = false
-
 [dependencies.cggmp-threshold-ecdsa]
 #git = "https://github.com/webb-tools/cggmp-threshold-ecdsa.git"
 git = "https://github.com/tmpfs/cggmp-threshold-ecdsa.git"
@@ -53,14 +45,15 @@ default-features = false
 
 [dependencies.multi-party-ecdsa]
 #git = "https://github.com/webb-tools/multi-party-ecdsa"
-path = "../forks/multi-party-ecdsa"
-#git = "https://github.com/tmpfs/multi-party-ecdsa"
-#branch = "deps-update"
+#path = "../forks/multi-party-ecdsa"
+git = "https://github.com/tmpfs/multi-party-ecdsa"
+branch = "deps-update"
 default-features = false
 version = "*"
 
 [patch.crates-io]
-curv-kzen = { path = "../forks/curv" }
+#curv-kzen = { path = "../forks/curv" }
+curv-kzen = { git= "https://github.com/tmpfs/curv", branch = "disable-default-features" }
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3"

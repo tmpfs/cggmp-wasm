@@ -199,7 +199,7 @@ dependencies = [
  "curv-kzen",
  "fs-dkr",
  "kzen-paillier",
- "multi-party-ecdsa 0.8.2 (git+https://github.com/tmpfs/multi-party-ecdsa?branch=deps-update)",
+ "multi-party-ecdsa",
  "rand 0.8.5",
  "rand_chacha 0.3.1",
  "rayon",
@@ -223,7 +223,7 @@ dependencies = [
  "kzen-paillier",
  "log",
  "mpc-ecdsa-getrandom-hack",
- "multi-party-ecdsa 0.8.2",
+ "multi-party-ecdsa",
  "rand 0.6.5",
  "round-based",
  "serde",
@@ -352,6 +352,7 @@ checksum = "e35f15e1a0699dd988fed910dd78fdc6407f44654cd12589c91fa44ea67d9159"
 [[package]]
 name = "curv-kzen"
 version = "0.10.0"
+source = "git+https://github.com/tmpfs/curv?branch=disable-default-features#3f47aa38cfa2834faf497f4342772df02ed13169"
 dependencies = [
  "cryptoxide",
  "curve25519-dalek",
@@ -532,7 +533,7 @@ dependencies = [
  "bitvec",
  "curv-kzen",
  "kzen-paillier",
- "multi-party-ecdsa 0.8.2 (git+https://github.com/tmpfs/multi-party-ecdsa?branch=deps-update)",
+ "multi-party-ecdsa",
  "round-based",
  "serde",
  "serde_derive",
@@ -832,24 +833,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b3b9823566d7be5ce1dbee68d07d92eb9575b43b91f44f986335e86ea1fa953b"
 dependencies = [
  "getrandom 0.2.8",
-]
-
-[[package]]
-name = "multi-party-ecdsa"
-version = "0.8.2"
-dependencies = [
- "centipede",
- "curv-kzen",
- "derivative",
- "kzen-paillier",
- "log",
- "round-based",
- "serde",
- "sha2 0.9.9",
- "subtle",
- "thiserror",
- "zeroize",
- "zk-paillier",
 ]
 
 [[package]]
