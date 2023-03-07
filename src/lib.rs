@@ -50,7 +50,7 @@ impl Default for Parameters {
 #[wasm_bindgen]
 pub fn keccak256(message: JsValue) -> Result<JsValue, JsError> {
     use sha3::{Digest, Keccak256};
-    let message: Vec<u8> = message.into_serde()?;
+    let message: Vec<u8> = serde_wasm_bindgen::from_value(message)?;
     let digest = Keccak256::digest(&message).to_vec();
-    Ok(JsValue::from_serde(&digest)?)
+    Ok(serde_wasm_bindgen::to_value(&digest)?)
 }
