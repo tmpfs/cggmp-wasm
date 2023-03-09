@@ -192,7 +192,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "cggmp-threshold-ecdsa"
 version = "0.1.0"
-source = "git+https://github.com/tmpfs/cggmp-threshold-ecdsa.git?branch=deps-update#af171b3cb8839f1659c15ebc256e733bce5855d6"
+source = "git+https://github.com/tmpfs/cggmp-threshold-ecdsa.git?branch=repo-revert#cbc280b1a9d15b2168fde13f6853bcc526dad644"
 dependencies = [
  "bincode",
  "centipede",
@@ -529,7 +529,7 @@ dependencies = [
 [[package]]
 name = "fs-dkr"
 version = "0.1.0"
-source = "git+https://github.com/tmpfs/fs-dkr?branch=deps-update#8cc00728120fab70563268ad83adb2d717c38af7"
+source = "git+https://github.com/tmpfs/fs-dkr?branch=repo-revert#80ea94aff2aedf146eb5a5c54ee1d2719e90fa52"
 dependencies = [
  "bitvec",
  "curv-kzen",
@@ -839,7 +839,7 @@ dependencies = [
 [[package]]
 name = "multi-party-ecdsa"
 version = "0.8.2"
-source = "git+https://github.com/tmpfs/multi-party-ecdsa?branch=deps-update#00f4479a06f67fbbc9f378ca0bd4dc754c2c1dfc"
+source = "git+https://github.com/webb-tools/multi-party-ecdsa#facf26da1bee74f6bf10ebfba58bc8828d74c6a9"
 dependencies = [
  "centipede",
  "curv-kzen",

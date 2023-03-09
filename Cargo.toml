@@ -27,14 +27,13 @@ wasm-log = "0.3"
 [dependencies.cggmp-threshold-ecdsa]
 #git = "https://github.com/webb-tools/cggmp-threshold-ecdsa.git"
 git = "https://github.com/tmpfs/cggmp-threshold-ecdsa.git"
-branch = "deps-update"
+branch = "repo-revert"
+features = ["num-bigint"]
 #path = "../forks/cggmp-threshold-ecdsa"
 default-features = false
 
 
 [dependencies.curv-kzen]
-#git = "https://github.com/ZenGo-X/curv"
-#path = "../forks/curv"
 version = "0.10"
 features = ["num-bigint"]
 default-features = false
@@ -45,10 +44,7 @@ package = "kzen-paillier"
 default-features = false
 
 [dependencies.multi-party-ecdsa]
-#git = "https://github.com/webb-tools/multi-party-ecdsa"
-#path = "../forks/multi-party-ecdsa"
-git = "https://github.com/tmpfs/multi-party-ecdsa"
-branch = "deps-update"
+git = "https://github.com/webb-tools/multi-party-ecdsa"
 default-features = false
 version = "*"
 
